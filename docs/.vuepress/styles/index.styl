@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+/**
+ * @desc 重写一些样式
+ * @author dazhi
+ * @date 2019-12-09
+ */
+
+.theme-default-content:not(.custom)
+  max-width: unset;
+
+@media (min-width: 1336px)
+  .page
+    padding-right: 390px;
+    .page-edit,
+    .page-nav
+      max-width: unset;
+
+.custom-page-class
+  .theme-default-content:not(.custom),
+  .page-edit,
+  .page-nav
+    max-width: 740px;
+  .page
+    padding-right: 0;
+
+@media (min-width: 1600px)
+  .home .footer
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 960px;
+    margin: 0 auto;
+
+.sidebar
+  &::-webkit-scrollbar
+    display: none;
+  
+  &::-webkit-scrollbar-thumb
+    background-color: rgba(0,0,0,.15)
+
+  &::-webkit-scrollbar-thumb:hover
+    width: 6px;
+    background-color: rgba(0,0,0,.2);
+
+  &:hover
+   &::-webkit-scrollbar
+     display: block;
+
+@media (min-width: 768px)
+  .sidebar
+    width: 13.4rem;
+
+  .page
+    padding-left: 13.4rem;
+
+@media (min-width: 959px)
+  .sidebar
+    width: 15rem;
+
+  .page
+    padding-left: 15rem;
+
+@media (min-width: 1600px)
+  .sidebar
+    width: 18rem;
+
+  .page
+    padding-left: 18rem;
+
+@media (min-width: 1920px)
+  .sidebar
+    width: 20rem;
+
+  .page
+    padding-left: 20rem;
+
+::-webkit-scrollbar
+  width: 6px;
+  height: 6px;
+  background: transparent;
+
+::-webkit-scrollbar-thumb
+  width: 6px;
+  background-color: #3eaf7c;
+  border-radius: 10px;
+
+&::-webkit-scrollbar-thumb:hover
+  width: 6px;
+  background-color: darken(#3eaf7c, 10%);

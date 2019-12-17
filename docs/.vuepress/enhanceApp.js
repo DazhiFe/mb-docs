@@ -1,0 +1,23 @@
+/**
+ * @desc 拓展配置
+ * @author dazhi
+ * @date 2019-12-09
+ */
+
+import Simulator from './components/Simulator'
+
+export default ({ Vue, isServer, router }) => {
+  // if (!isServer) {
+  //   import('vue-toasted' /* webpackChunkName: "notification" */).then((module) => {
+  //     Vue.use(module.default)
+  //   })
+  // }
+
+  // 注册组件
+  Vue.component('Simulator', Simulator)
+
+  // 路由守卫
+  router.beforeEach((to, from, next) => {
+    next()
+  })
+}
