@@ -5,6 +5,8 @@
  */
 
 import Simulator from './components/Simulator'
+import ImgShow from './components/ImgShow'
+import Catalog from './components/Catalog'
 
 export default ({ Vue, isServer, router }) => {
   // if (!isServer) {
@@ -15,6 +17,8 @@ export default ({ Vue, isServer, router }) => {
 
   // 注册组件
   Vue.component('Simulator', Simulator)
+  Vue.component('ImgShow', ImgShow)
+  Vue.component('Catalog', Catalog)
 
   // 路由守卫
   router.beforeEach((to, from, next) => {

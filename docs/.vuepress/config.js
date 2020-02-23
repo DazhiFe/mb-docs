@@ -25,7 +25,7 @@ module.exports = {
     'demo-block'
   ],
   // 标题
-  title: '好实用移动端UI组件库',
+  title: '好实用前端技术团队',
   /**
    * 基础路径
    * 部署站点的基础路径，如果你想让你的网站部署到一个子路径下，你将需要设置它。
@@ -36,21 +36,62 @@ module.exports = {
   themeConfig: {
     logo: '/images/logo2.png',
     // 导航栏配置
-    // nav: [
-    //   {
-    //     text: '开发文档',
-    //     items: [
-    //       {
-    //         text: 'shop手机端',
-    //         link: '/shop/basic/button'
-    //       },
-    //       {
-    //         text: 'MBUI',
-    //         link: '/mbui/'
-    //       }
-    //     ]
-    //   }
-    // ],
+    nav: [
+      {
+        text: '开发文档',
+        items: [
+          {
+            text: '移动端UI组件库',
+            link: '/shop/basic/button'
+          },
+          {
+            text: '后台管理UI组件库',
+            link: 'http://shop.test.hsy884.com/heleasy-admin/'
+          },
+          {
+            text: '后台管理Vue UI组件库',
+            link: 'http://shop.test.hsy884.com/vue_admin_template/'
+          },
+          {
+            text: 'Vue项目开发经验、问题总结',
+            link: 'https://www.yuque.com/books/share/993017a6-8784-46be-86bb-f47923a07174?#'
+          }
+        ]
+      },
+      {
+        text: '开发规范',
+        items: [
+          {
+            text: 'HTML规范',
+            link: '/standard/html'
+          },
+          {
+            text: 'CSS/SASS规范',
+            link: '/standard/css'
+          },
+          {
+            text: 'JavaScript规范',
+            link: '/standard/javascript'
+          },
+          {
+            text: '图片规范',
+            link: '/standard/img'
+          },
+          {
+            text: '命名规范',
+            link: '/standard/name'
+          }
+        ]
+      },
+      {
+        text: '问题库',
+        link: '/question/'
+      },
+      {
+        text: '前端源码',
+        link: '/code/'
+      }
+    ],
     // 侧边栏配置
     sidebar: {
       '/shop/': [
@@ -69,6 +110,14 @@ module.exports = {
             {
               title: '媒体对象',
               path: 'basic/media'
+            },
+            {
+              title: '小图标',
+              path: 'basic/icon'
+            },
+            {
+              title: '彩带',
+              path: 'basic/ribbon'
             }
           ],
           collapsable: false
@@ -107,6 +156,10 @@ module.exports = {
               path: 'feedback/actionsheet'
             },
             {
+              title: '下拉菜单',
+              path: 'feedback/dropdown'
+            },
+            {
               title: '弹出框',
               path: 'feedback/dialog'
             },
@@ -117,6 +170,10 @@ module.exports = {
             {
               title: '弹出层',
               path: 'feedback/slide'
+            },
+            {
+              title: '评论栏',
+              path: 'feedback/comment'
             }
           ],
           collapsable: false
@@ -145,6 +202,10 @@ module.exports = {
             {
               title: '底部导航',
               path: 'nav/footer'
+            },
+            {
+              title: '纯按钮导航',
+              path: 'nav/nav-btn'
             }
           ],
           collapsable: false
@@ -160,9 +221,97 @@ module.exports = {
           collapsable: false
         }
       ],
-      // '/mbui/': [
-      //   ''
-      // ]
+      '/question/': [
+        {
+          title: 'HTML5',
+          children: [
+            {
+              title: 'video标签播放视频有声音没画面',
+              path: 'html5/1'
+            },
+            {
+              title: 'type="file"上传重复的文件无法再次触发change事件',
+              path: 'html5/2'
+            }
+          ]
+        },
+        {
+          title: 'CSS',
+          children: [
+            {
+              title: '文字两端对齐',
+              path: 'css/1'
+            },
+            {
+              title: 'select标签的对齐',
+              path: 'css/2'
+            },
+            {
+              title: '给table的tbody添加滚动条出现的问题',
+              path: 'css/3'
+            }
+          ]
+        },
+        {
+          title: 'JavaScript',
+          children: [
+            {
+              title: 'jQuery无法获取元素带小数点的宽高',
+              path: 'javascript/1'
+            },
+            {
+              title: 'html2canvas插件截图时，图片圆角异常',
+              path: 'javascript/2'
+            },
+            {
+              title: 'jQuery如何获取隐藏元素的宽高？',
+              path: 'javascript/3'
+            },
+            {
+              title: '通过jQuery获取data-*自定义属性存在的问题',
+              path: 'javascript/4'
+            },
+            {
+              title: 'UEditor富文本编辑器插入的图片无法自适应容器宽度',
+              path: 'javascript/5'
+            },
+            {
+              title: 'jQuery判断html标签是否存在某个属性代码',
+              path: 'javascript/6'
+            },
+            {
+              title: 'jQuery获取包含当前节点html的方法',
+              path: 'javascript/7'
+            },
+            {
+              title: 'jquery判断滚动条是否滚动到底部',
+              path: 'javascript/8'
+            }
+          ]
+        },
+        {
+          title: 'Vue.js',
+          children: [
+            {
+              title: 'Vue页面在新窗口打开页面的方法',
+              path: 'vue/1'
+            }
+          ]
+        },
+        {
+          title: '其他',
+          children: [
+            {
+              title: 'wampserver重新安装后启动不了',
+              path: 'other/1'
+            },
+            {
+              title: '远程桌面连接报错：出现身份验证错误/要求的函数不受支持的解决方案',
+              path: 'other/2'
+            }
+          ]
+        }
+      ]
     },
     // 自动生成侧边栏
     // sidebar: 'auto'

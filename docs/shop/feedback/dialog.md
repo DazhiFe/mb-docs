@@ -60,6 +60,74 @@
 </div>
 ```
 
+## 红包相关弹窗
+
+### 红包
+
+```html
+<div class="dialog-wrap" id="dialog-hb">
+  <div class="overlay"></div>
+  <div class="dialog dialog--hb">
+    <div class="dialog-bd">
+      <h3 class="dialog-bd__tle">恭喜获得1个红包</h3>
+      <p class="dialog-bd__txt">点击 “拆” 即可领取</p>
+    </div>
+    <div class="dialog-btn"><span class="dialog-btn__txt">拆</span></div>
+  </div>
+  <!-- 关闭按钮 -->
+  <a class="dialog-close" href="javascript:closeDialog('dialog-hb');">
+    <i class="iconfont">&#xe777;</i>
+  </a>
+</div>
+```
+
+### 红包-活动礼包
+
+```html
+<div class="dialog-wrap" id="dialog-hb-hdlb">
+  <div class="overlay"></div>
+  <div class="dialog dialog--hb">
+    <h3 class="dialog-hb-tle">恭喜获得</h3>
+    <div class="dialog-bd">
+      <div class="gift-box">
+        <i class="icon-giftbox"></i>
+        <p class="gift-box__txt">活动礼包</p>
+      </div>
+    </div>
+    <div class="dialog-btn dialog-btn--style-2"><span class="dialog-btn__txt">立即打开</span></div>
+  </div>
+  <!-- 关闭按钮 -->
+  <a class="dialog-close" href="javascript:closeDialog('dialog-hb-hdlb');">
+    <i class="iconfont">&#xe777;</i>
+  </a>
+</div>
+```
+
+### 红包-中奖结果
+
+```html
+<div class="dialog-wrap" id="dialog-hb-result">
+  <div class="overlay" onclick="javascript:closeDialog('dialog-hb-result');"></div>
+  <div class="dialog dialog--hb-result">
+    <h3 class="dialog-hbres-tle">恭喜获得</h3>
+    <div class="dialog-bd">
+      <ul class="hb-coupon">
+        <li class="hb-coupon__item">
+          <span class="hb-coupon__item__num">8.5</span>折 <span>优惠券</span>
+        </li>
+        <li class="hb-coupon__item">
+          <span class="hb-coupon__item__num">8.5</span>折 <span>优惠券</span>
+        </li>
+        <li class="hb-coupon__item">
+          <span class="hb-coupon__item__num">8.5</span>折 <span>优惠券</span>
+        </li>
+      </ul>
+    </div>
+    <div class="dialog-btn"><span class="dialog-btn__txt">立即使用</span></div>
+  </div>
+</div>
+```
+
 - 脚本方法
 
 ```js

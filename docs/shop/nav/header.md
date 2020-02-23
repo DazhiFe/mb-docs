@@ -80,6 +80,36 @@
 </header>
 ```
 
+## 头部透明
+
+`class`属性添加`header--no-bg`值，适合用在有底色的背景上。
+
+```html
+<header class="header header--no-bg">
+  <div class="header-left">
+    <i class="header-icon icon-v-left"></i>
+  </div>
+  <h1 class="page-tt">
+    标题
+  </h1>
+</header>
+```
+
+## 头部白色
+
+`class`属性添加`header--bg-white`值。
+
+```html
+<header class="header header--bg-white">
+  <div class="header-left">
+    <i class="header-icon icon-v-left"></i>
+  </div>
+  <h1 class="page-tt">
+    标题
+  </h1>
+</header>
+```
+
 ::: warning 注意
 当页面不需要头部导航的时候，需要在`class="page"`的`div`的`class`属性添加`page--no-header`值。
 :::

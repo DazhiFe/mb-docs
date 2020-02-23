@@ -45,6 +45,27 @@
 <p class="tdlt">中划线</p>
 ```
 
+## 文本截断
+
+### 单行截断
+
+添加`class="toe"`。
+
+```html
+<p class="toe">超出一行显示省略号超出一行显示省略号超出一行显示省略号</p>
+```
+
+### 两行截断
+
+添加`class="toe-lines-2"`。
+
+```html
+<p class="toe-lines-2">
+  超出两行显示省略号超出两行显示省略号超出两行显示省略号超出两行显示省略号超出两行显示省略号
+  超出两行显示省略号超出两行显示省略号超出两行显示省略号超出两行显示省略号
+</p>
+```
+
 ## 背景颜色
 
 ```html
@@ -55,5 +76,7 @@
 <p class="bg-success">成功</p>
 <p class="bg-white">白色</p>
 ```
+
+
 
 <simulator iframeSrc="https://shop.test.hsy884.com/dist/demo/helper.html" />
